@@ -1,0 +1,36 @@
+{
+  "name": "opencode-limits-sidebar",
+  "version": "2.0.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "OpenCode plugin that displays usage limits in the TUI sidebar",
+  "exports": {
+    "./tui": "./tui.ts"
+  },
+  "files": [
+    "tui.ts",
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && vitest run --coverage"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.0",
+    "@opentui/core": ">=0.5.17",
+    "@opentui/solid": ">=0.5.17",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.28",
+    "@opencode/theme": "^2.0.28",
+    "@opentui/core": "0.5.17",
+    "@opentui/solid": "0.5.17",
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^4.1.2",
+    "solid-js": "1.9.12",
+    "typescript": "^5.0.2",
+    "vitest": "^4.1.2"
+  }
+}
